@@ -1,0 +1,17 @@
+lw $s0, x
+lw $s1, y
+move $a0, $s0
+jal fun
+li $s0, 3
+mul $s1, $s0, $a0
+addi $s1, $s1, 5
+move $v0, $s1
+jr $ra
+move $s1, $v0
+li $v0, 4
+la $a0, a
+li $v0, 1
+move $a0, $s1
+li $v0, 4
+la $a0, a
+li $v0, 10

@@ -1,0 +1,21 @@
+li $t2, 25
+lw $t3, value
+add $t4, $t2, $t3
+sub $t5, $t2, $t3
+sw $t5, Z
+li $v0, 4
+la $a0, a
+li $v0, 5
+move $t0, $v0
+li $v0, 4
+la $a0, a
+li $v0, 5
+move $t1, $v0
+add $t0, $t0, $t1
+li $v0, 4
+la $a0, a
+li $v0, 1
+move $a0, $t0
+li $v0, 4
+la $a0, a
+li $v0, 10
